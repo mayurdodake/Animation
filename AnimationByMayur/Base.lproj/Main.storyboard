@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F2009" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="pnA-eC-E8U">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DZ9-xR-dP1"/>
+                                    <constraint firstAttribute="height" constant="150" id="G1M-wH-hdx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx7-8e-F4u">
+                                <rect key="frame" x="239" y="501" width="122" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="6Vm-In-Sem"/>
+                                    <constraint firstAttribute="height" constant="79" id="irZ-4d-45P"/>
+                                </constraints>
+                                <state key="normal" image="on-0ff_btn_hd"/>
+                                <connections>
+                                    <action selector="btnOnClick_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wF2-AR-3aN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96853805930727466" green="0.9840928532415445" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pnA-eC-E8U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2sh-54-IG2"/>
+                            <constraint firstItem="Gx7-8e-F4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKA-c6-juc"/>
+                            <constraint firstItem="pnA-eC-E8U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oJL-iU-52j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gx7-8e-F4u" secondAttribute="bottom" constant="20" id="wxu-8v-8Ae"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnOn" destination="Gx7-8e-F4u" id="0me-YJ-JiX"/>
+                        <outlet property="imgView" destination="pnA-eC-E8U" id="JJ9-fr-xfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="on-0ff_btn_hd" width="122" height="79"/>
+        <image name="party" width="159" height="159"/>
+    </resources>
+</document>
